@@ -1,0 +1,65 @@
+
+/* Timeline List Styling */
+.journey-container .timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.journey-container .timeline li {
+  display: flex;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.journey-container .timeline li:last-child {
+  padding-bottom: 0;
+}
+
+/* The Connecting Vertical Line */
+.journey-container .timeline li::before {
+  content: '';
+  position: absolute;
+  top: 40px; 
+  bottom: 0; 
+  left: 19px;
+  width: 2px;
+  background-color: var(--e-global-color-secondary, #D3D3D3);
+  z-index: 0;
+}
+.journey-container .timeline li:last-child::before {
+  display: none; 
+}
+
+/* The Numbered Circles */
+.journey-container .timeline-number {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--uicore-primary-color, #C06141); /* Uses UiCore Primary Color */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+}
+
+/* Text Content Styling */
+.journey-container .timeline-content {
+  padding-top: 0.4rem; 
+}
+
+.journey-container .timeline-content h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.journey-container .timeline-content p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "acf/care-tabs",
+  "title": "Treatment Tabs",
+  "description": "A vertical tabbed interface with WYSIWYG content.",
+  "category": "design",
+  "icon": "feedback",
+  "keywords": ["tabs", "care", "vertical", "steps"],
+  "style": "file:./style.css",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "care-tabs.php"
+  },
+  "supports": {
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+    "key": "group_6b1d2f3a4c5e6",
+    "title": "Block - Pills List",
+    "fields": [
+        {
+            "key": "field_6b1d2f3a4c5e7",
+            "label": "Pills",
+            "name": "pills_repeater",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "One row per pill. Drag rows to reorder.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_6b1d2f3a4c5e8",
+            "button_label": "Add Pill",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6b1d2f3a4c5e8",
+                    "label": "Label",
+                    "name": "pill_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "e.g. Fine lines & crepiness",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6b1d2f3a4c5e7"
+                },
+                {
+                    "key": "field_6b1d2f3a4c5e9",
+                    "label": "Link (optional)",
+                    "name": "pill_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_6b1d2f3a4c5e7"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/pills-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1789575444
+}

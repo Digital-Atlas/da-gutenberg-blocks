@@ -1,0 +1,97 @@
+/* Container Reset */
+.author-review-block {
+    box-sizing: border-box;
+}
+
+.author-review-block * {
+    box-sizing: border-box;
+}
+
+/* The Main Layout Container */
+.author-review-block .author-review-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--uicore-dark-color); /* Soft beige */
+    border: 1px solid #E5E2DC;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Left Side Grouping (Avatar + Text) */
+.author-review-block .author-main {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/* The Avatar Circle */
+.author-review-block .author-image-wrapper {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #E2E8E4;
+    flex-shrink: 0;
+}
+
+.author-review-block .author-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Placeholder pattern if no image is found */
+.author-review-block .author-avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient( 45deg, #E2E8E4, #E2E8E4 10px, #D3DED6 10px, #D3DED6 20px );
+}
+
+/* Typography */
+.author-review-block .author-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.author-review-block .author-prefix {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.author-review-block .author-name {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+.author-review-block .author-meta {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+/* The Right-Side Badge */
+.author-review-block .author-badge {
+    background-color: var(--uicore-accent-color);
+    color: var(--uicore-body-color);
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .author-review-block .author-review-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .author-review-block .author-badge {
+        margin-top: 0.5rem;
+    }
+}

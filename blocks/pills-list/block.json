@@ -1,0 +1,28 @@
+{
+  "name": "acf/pills-list",
+  "title": "Pills List",
+  "description": "A wrapping list of rounded pill labels, e.g. skin concerns a treatment addresses.",
+  "category": "design",
+  "icon": "tag",
+  "keywords": ["pills", "tags", "chips", "concerns", "list"],
+  "style": "file:./style.css",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "pills-list.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true
+    }
+  }
+}

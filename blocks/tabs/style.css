@@ -1,0 +1,133 @@
+/* Container Reset */
+.care-tabs-block {
+    box-sizing: border-box;
+}
+
+.care-tabs-block * {
+    box-sizing: border-box;
+}
+
+/* Hide the radio buttons entirely */
+.care-tabs-block .care-tab-radio {
+    display: none;
+}
+
+/* The Main 2-Column Layout */
+.care-tabs-block .care-tabs-layout {
+    display: flex;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    overflow: hidden; /* Keeps the rounded corners intact */
+    background-color: var(--uicore-white-color);
+}
+
+/* --------------------
+   Left Sidebar
+-------------------- */
+.care-tabs-block .care-tabs-sidebar {
+    flex-basis: 30%;
+    min-width: 250px;
+    background-color: var(--uicore-light-color, #F6F5F2); /* UiCore 'Light' global colour */
+    border-right: 1px solid var(--uicore-dark-color);
+}
+
+/* The Clickable Labels */
+.care-tabs-block .care-tab-label {
+    display: block;
+    cursor: pointer;
+    padding: 2rem 1.5rem;
+    border-left: 4px solid transparent; /* Prevents layout shift when active */
+    transition: background-color 0.2s ease;
+}
+
+.care-tabs-block .care-tab-label:hover {
+    background-color: color-mix(in srgb, var(--uicore-light-color, #F6F5F2), black 5%);
+}
+
+/* Typography for the Sidebar */
+.care-tabs-block .step-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #A0988D;
+    margin-bottom: 0.5rem;
+}
+
+.care-tabs-block .tab-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.care-tabs-block .tab-subtitle {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #666666;
+}
+
+/* --------------------
+   Right Content Area
+-------------------- */
+.care-tabs-block .care-tabs-panels {
+    flex-basis: 70%;
+    padding: 3rem;
+    background-color: var(--uicore-white-color);
+}
+
+/* Hide panels by default (PHP inline CSS shows the active one) */
+.care-tabs-block .care-tab-panel {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.care-tabs-block .care-tab-panel > *:first-child {
+    margin-top: 0;
+}
+
+.care-tabs-block .care-tab-panel > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Smooth transition when clicking tabs */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------
+   Footer & Button Area
+-------------------- */
+.care-tabs-block .care-tabs-action {
+    margin-top: 2.5rem; /* Pushes the button down from the WYSIWYG text */
+    text-align: left; /* Aligns nicely with the text above it */
+}
+
+.care-tabs-block .care-tabs-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--uicore-primary-color, #C06141);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.care-tabs-block .care-tabs-button:hover {
+    opacity: 0.85;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .care-tabs-block .care-tabs-layout {
+        flex-direction: column;
+    }
+    
+    .care-tabs-block .care-tabs-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--uicore-dark-color);
+    }
+}

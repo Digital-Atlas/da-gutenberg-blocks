@@ -1,0 +1,30 @@
+{
+  "name": "acf/care-journey",
+  "title": "Care Journey Timeline",
+  "description": "A custom step-by-step timeline block.",
+  "category": "formatting",
+  "icon": "list-view",
+  "keywords": ["timeline", "journey", "steps", "care"],
+  "style": "file:./style.css",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "care-journey.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true,
+      "link": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "acf/author",
+  "title": "Medical Reviewer",
+  "description": "Author or medical reviewer block linking to a team member.",
+  "category": "theme",
+  "icon": "admin-users",
+  "keywords": ["author", "reviewer", "medical", "team"],
+  "style": "file:./style.css",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "author.php"
+  },
+  "supports": {
+    "align": true,
+    "spacing": { "margin": true, "padding": true },
+    "color": { "background": true, "text": true }
+  }
+}
