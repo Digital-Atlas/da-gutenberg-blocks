@@ -55,3 +55,10 @@
         white-space: normal;
     }
 }
+
+/* A font size chosen in the block's Typography settings (preset class or custom
+   value) applies to the pills; without one they keep the 1.1rem / 1rem defaults. */
+.pills-list-block[class*="-font-size"] .pill-inner,
+.pills-list-block[style*="font-size"] .pill-inner {
+    font-size: inherit;
+}

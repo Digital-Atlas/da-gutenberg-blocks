@@ -2,13 +2,20 @@
 /**
  * Plugin Name: Dermatology Affiliates Custom Blocks
  * Description: A collection of custom Gutenberg blocks using ACF.
- * Version:     2.3.0
+ * Version:     2.4.0
  * Author:      DIGITAL ATLAS
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
+
+define( 'DAGB_VERSION', '2.4.0' );
+define( 'DAGB_FILE', __FILE__ );
+define( 'DAGB_DIR', plugin_dir_path( __FILE__ ) );
+
+// Updates from GitHub Releases (see includes/updater.php).
+require_once DAGB_DIR . 'includes/updater.php';
 
 // ==========================================
 // THIS IS STEP 2: Dynamically register all blocks
